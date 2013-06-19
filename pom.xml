@@ -13,7 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <bukkitVersion>1.5.1-R0.2-SNAPSHOT</bukkitVersion>
-        <mainClass>com.almuradev.sortstack.SortStackPlugin</mainClass>
+        <mainClass>com.almuradev.moveall.MoveAllPlugin</mainClass>
     </properties>
 
     <!-- Organization -->

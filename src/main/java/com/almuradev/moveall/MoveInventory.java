@@ -1,37 +1,30 @@
+/*
+ * This file is part of MoveAll.
+ *
+ * © 2013 AlmuraDev <http://www.almuradev.com/>
+ * MoveAll is licensed under the GNU General Public License.
+ *
+ * MoveAll is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MoveAll is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License. If not,
+ * see <http://www.gnu.org/licenses/> for the GNU General Public License.
+ */
 package com.almuradev.moveall;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
-
 import org.getspout.spoutapi.player.SpoutPlayer;
 
 public class MoveInventory {
-	
-		private static void stackInventoryItems(Player sPlayer,	Inventory inventory) {
-		int i, j;
-		for (i = 0; i < inventory.getSize(); i++) {
-			for (j = i + 1; j < inventory.getSize(); j++) {
-				moveitemInventory(sPlayer, inventory, j, i);
-			}
-		}
-	}
-
-
-
-		private static void moveitemInventory(Player sPlayer, Inventory inventory, int fromslot, int toslot) {
-
-			ItemStack fromitem = inventory.getItem(fromslot);
-			ItemStack toitem = inventory.getItem(toslot);
-
-			//inventory.setItem(toslot, fromitem);				
-			//inventory.getItem(toslot).setAmount(fromitem.getAmount());
-			//inventory.clear(fromslot);
-
-
-		}
-	
+		
 	public static void sendNotification(Player sPlayer, String string) {
 		if (((SpoutPlayer) sPlayer).isSpoutCraftEnabled() && (sPlayer instanceof SpoutPlayer)) {
 			if (string.length() < 25) {

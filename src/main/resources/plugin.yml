@@ -7,3 +7,8 @@ website: ${project.organization.url}
 main: ${mainClass}
 depend: [Spout, Vault]
 load: POSTWORLD
+
+permissions:  
+  moveall.move:
+    description: Allows users to use moveall
+    default: op
