@@ -17,18 +17,18 @@
  * You should have received a copy of the GNU General Public License. If not,
  * see <http://www.gnu.org/licenses/> for the GNU General Public License.
  */
-package com.almuradev.sortstack;
+package com.almuradev.moveall;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 
-public class SortStackPlugin extends JavaPlugin {
+public class MoveAllPlugin extends JavaPlugin {
 
-	private static SortStackPlugin instance;
+	private static MoveAllPlugin instance;
 
-	public static SortStackPlugin getInstance() {
+	public static MoveAllPlugin getInstance() {
 		return instance;
 	}
 
@@ -43,7 +43,7 @@ public class SortStackPlugin extends JavaPlugin {
         }
 
 		PluginManager pm = this.getServer().getPluginManager();
-		pm.registerEvents(new SortStackListener(this), this);
+		pm.registerEvents(new MoveAllListener(this), this);
 			
 	}
 }

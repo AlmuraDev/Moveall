@@ -4,11 +4,11 @@
 
     <!-- Project information -->
     <groupId>com.almuradev</groupId>
-    <artifactId>sortstack</artifactId>
+    <artifactId>moveall</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>SortStack</name>
+    <name>MoveAll</name>
     <url>http://www.almuradev.com</url>
-    <description>Sort items with the press of a button!</description>
+    <description>Move All items with the press of a button!</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,9 +33,9 @@
 
     <!-- Source code access -->
     <scm>
-        <developerConnection>scm:git:git@github.com:AlmuraDev/SortStackPlugin.git</developerConnection>
-        <connection>scm:git:git://github.com/AlmuraDev/SortStackPlugin.git</connection>
-        <url>https://github.com/AlmuraDev/SortStackPlugin</url>
+        <developerConnection>scm:git:git@github.com:AlmuraDev/MoveAll.git</developerConnection>
+        <connection>scm:git:git://github.com/AlmuraDev/MoveAll.git</connection>
+        <url>https://github.com/AlmuraDev/MoveAll</url>
     </scm>
 
     <!-- Repository locations -->

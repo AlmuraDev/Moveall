@@ -7,36 +7,3 @@ website: ${project.organization.url}
 main: ${mainClass}
 depend: [Spout, Vault]
 load: POSTWORLD
-
-permissions:
-  sortstack.*:
-    description: Gives access to all sort stack abilities
-    children:
-      sortstack.stack.tools: true
-      sortstack.stack.weapons: true
-      sortstack.stack.buckets: true
-      sortstack.stack.armors: true
-      sortstack.stack.foods: true
-      sortstack.stack.vehicles: true
-      sortstack.sort: true
-  sortstack.stack.tools:
-    description: Allows users to stack Tools
-    default: op
-  sortstack.stack.weapons:
-    description: Allows user to Stack Weapons.
-    default: op
-  sortstack.stack.buckets:
-    description: Allows user to Stack Buckets.
-    default: op
-  sortstack.stack.armors:
-    description: Allows users to Stack Amors.
-    default: op
-  sortstack.stack.foods:
-    description: Allows users access to Stack Foods.
-    default: op
-  sortstack.stack.vehicles:
-    description: Allows users to Stack vehicles
-    default: op
-  sortstack.sort:
-    description: Allows users to use SortStack
-    default: true
